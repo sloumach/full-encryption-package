@@ -1,0 +1,33 @@
+{
+  "name": "sloumach/full-encryption-package",
+  "description": "Laravel package for full per-user encryption and decryption of big text data.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Abdessalem",
+      "email": "contact@abdessalem.tn"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "FullEncryption\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "FullEncryption\\FullEncryptionServiceProvider"
+      ],
+      "aliases": {
+        "Encrypted": "FullEncryption\\Facades\\Encrypted"
+      }
+    }
+  },
+  "require": {
+    "php": ">=8.0",
+    "illuminate/support": "^9.0|^10.0|^11.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
