@@ -47,25 +47,26 @@ php artisan full:generate-keys
 ## 🧬 Usage:
 
 # Option 1 – Via Facade:
-
+```php
 use FullEncryption\Facades\FullEncrypted;
 use App\Models\User;
 $user = User::first();
 $encrypted = FullEncrypted::fullEncrypt('Hello world!', $user);
 $decrypted = FullEncrypted::fullDecrypt($encrypted, $user);
-
+```
 # Option 2 – Via Trait:
-
+```php
 use FullEncryption\Traits\Encryptable;
 class User extends Authenticatable {
     use Encryptable;
 }
-
+```
 # Then call:
+```php
 $user = User::first();
-$encrypted = $user->fullEncrypt('My secret');
+$encrypted = $user->fullEncrypt('Hello word');
 $decrypted = $user->fullDecrypt($encrypted);
-
+```
 # ⚙️ How It Works:
 
 Each user has an enckey (stored encrypted) generated from their email
