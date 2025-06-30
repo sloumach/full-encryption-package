@@ -69,11 +69,11 @@ $decrypted = $user->fullDecrypt($encrypted);
 ```
 # ⚙️ How It Works:
 
-Each user has an enckey (stored encrypted) generated from their email
-This enckey is used as a symmetric key for AES-based encryption
-The package does not depend on Laravel's APP_KEY
+Each user has an enckey (stored encrypted) generated from their email.
+This enckey is used as a symmetric key for AES-based encryption.
+The package does not depend on Laravel's APP_KEY.
 
 # 🛡️ Security Notes:
 
-The encrypted key itself is protected using Laravel's encryption system
-You can override the logic by extending the service class
+The encrypted key itself is protected using Laravel's encryption system.
+You can override the logic by extending the service class.
