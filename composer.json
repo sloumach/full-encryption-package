@@ -20,7 +20,7 @@
         "FullEncryption\\FullEncryptionServiceProvider"
       ],
       "aliases": {
-        "Encrypted": "FullEncryption\\Facades\\Encrypted"
+        "FullEncrypted": "FullEncryption\\Facades\\FullEncrypted"
       }
     }
   },
